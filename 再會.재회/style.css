@@ -1,0 +1,43 @@
+    body { margin: 25; }
+
+    /* block level element*/
+    h1 { /* border-width: 2px;
+        border-color: gray;
+        border-style: solid;을 아래처럼 줄임 */
+        border-bottom: 2px solid gray;
+
+        text-align: center;
+        font-size: 50px;
+        padding: 100px;
+        margin: 0; 
+        display: block; }
+        
+
+    /* inline element*/
+    a { text-decoration: none; }
+
+    ol { border-right: 2px solid gray; 
+         width: 150px;
+         margin: 0;
+         padding: 20px;
+         padding-left: 40px; }
+    
+    #grid { display: grid;
+            grid-template-columns: 200px 1fr;
+            padding-left: 25px; }
+
+    h2,p { margin-left: 50px;
+        padding-right: 25px;}
+
+    @media ( max-width:800px ) {
+        #grid {display: block} 
+        ol {border-bottom: 2px dotted gray;
+            border-right: 0px;} 
+            /* border 중복됐는데 이거 못합치남? */
+
+        h1 {border-bottom: 2px solid gray;
+            text-align: center;
+            font-size: 40px;
+            padding: 50px;
+            margin: 0; 
+            display: block;}}
